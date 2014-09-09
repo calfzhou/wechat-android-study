@@ -1,0 +1,23 @@
+package com.tencent.mm.ui.pluginapp;
+
+import android.graphics.Bitmap;
+import com.tencent.mm.n.c;
+import com.tencent.mm.ui.applet.e;
+
+final class l
+  implements e
+{
+  l(k paramk)
+  {
+  }
+
+  public final Bitmap gu(String paramString)
+  {
+    return c.a(paramString, false, -1);
+  }
+}
+
+/* Location:           /Users/zhouji/projects/wechat-android-study/classes_dex2jar.jar
+ * Qualified Name:     com.tencent.mm.ui.pluginapp.l
+ * JD-Core Version:    0.6.2
+ */
