@@ -3,6 +3,8 @@ wechat-android-study
 
 Decompile WeChat Android source code.
 
+Version 5.4.0.51_r798589
+
 1.  Decompress .apk package
     * `unzip wexin-xxx.apk`
 2.  Use [androguard](https://code.google.com/p/androguard/) to convert manifest xml to readable text file:
