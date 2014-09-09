@@ -1,0 +1,1292 @@
+<?xml version="1.0" ?>
+<manifest android:installLocation="0" android:versionCode="480" android:versionName="5.4.0.51_r798589" package="com.tencent.mm" xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.tencent.mm.plugin.permission.WRITE" android:protectionLevel="0x00000002">
+    </permission>
+    <permission android:name="com.tencent.mm.plugin.permission.READ" android:protectionLevel="0x00000002">
+    </permission>
+    <permission android:name="com.tencent.mm.permission.MM_MESSAGE" android:protectionLevel="0x00000002">
+    </permission>
+    <uses-permission android:name="com.tencent.mm.plugin.permission.READ">
+    </uses-permission>
+    <uses-permission android:name="com.tencent.mm.plugin.permission.WRITE">
+    </uses-permission>
+    <uses-permission android:name="com.tencent.mm.plugin.permission.SEND">
+    </uses-permission>
+    <uses-permission android:name="com.tencent.mm.permission.MM_MESSAGE">
+    </uses-permission>
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="16">
+    </uses-sdk>
+    <uses-feature android:name="android.hardware.camera" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false">
+    </uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false">
+    </uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS">
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT">
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT">
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS">
+    </uses-permission>
+    <uses-permission android:name="com.tencent.mm.location.permission.SEND_VIEW">
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH">
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN">
+    </uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY">
+    </uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW">
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE">
+    </uses-permission>
+    <application android:hardwareAccelerated="true" android:icon="@7F020500" android:label="@7F0C07A9" android:largeHeap="true" android:name="com.tencent.mm.app.MMApplication" android:theme="@7F0D0105">
+        <uses-library android:name="com.google.android.maps" android:required="false">
+        </uses-library>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false">
+        </uses-library>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true">
+        </meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632.0dip">
+        </meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598.0dip">
+        </meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632.0dip">
+        </meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598.0dip">
+        </meta-data>
+        <meta-data android:name="wx_qlauncher_coop" android:value="fun1,fun2">
+        </meta-data>
+        <meta-data android:name="SupportedAirMsgVersion" android:value="1.0.0">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.CLIENT_VERSION" android:value="0x25040033">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_TAG" android:value="MicroMessenger_Android_Release #4373">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_OWNER" android:value="/home/android">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_HOSTNAME" android:value="amm-dev">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_TIME" android:value="08/28/2014 02:01 PM">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_COMMAND" android:value="unknown">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_REV" android:value="798589">
+        </meta-data>
+        <meta-data android:name="com.tencent.mm.BuildInfo.BUILD_SVNPATH" android:value="MicroMsg_proj/branches/android/RB-5.4-v2">
+        </meta-data>
+        <activity android:configChanges="0x000004A0" android:label="@7F0C07AA" android:launchMode="1" android:name="com.tencent.mm.ui.LauncherUI" android:theme="@7F0D0125" android:windowSoftInputMode="0x00000020">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN">
+                </action>
+                <category android:name="android.intent.category.LAUNCHER">
+                </category>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER">
+                </category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.BIZSHORTCUT">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="2" android:name="com.tencent.mm.ui.DataTransferUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.CheckCanSubscribeBizUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.ChattingUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.SendImgProxyUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.ImageDownloadUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.AtSomeoneUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.AppAttachDownloadUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.AppAttachFileListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.ChatMoreSelectUI" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.transmit.SelectConversationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.transmit.ShareImageSelectorUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.ui.contact.AddressUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SelectContactUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SelectLabelContactUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.FMessageConversationUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.GroupCardSelectUI" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.pluginapp.ContactSearchUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.SingleChatInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SendContactCardUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.pluginapp.AddMoreFriendsUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.pluginapp.AddMoreFriendsByOtherWayUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.conversation.BizConversationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.transmit.MsgRetransmitUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.transmit.SendAppMessageWrapperUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:excludeFromRecents="true" android:name="com.tencent.mm.ui.transmit.TaskRedirectUI" android:taskAffinity="com.tencent.mm.openapi.taskredirect" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.player.MusicDetailUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.ui.player.MainMusicPlayerUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.profile.ContactInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.profile.ContactSocialInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.profile.SayHiWithSnsPermissionUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.ModRemarkNameUI" android:windowSoftInputMode="0x00000014">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.ContactRemarkInfoModUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.ContactRemarkInfoViewUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.ContactRemarkImagePreviewUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.pluginapp.ContactSearchResultUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SayHiEditUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.ExposeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.ExposeWithProofUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.voicetranstext.VoiceTransTextUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsSafeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsChattingUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsLanguageUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsAboutMicroMsgUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsPrivacyUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsPersonalInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsAccountInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsAliasUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsAliasResultUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsPluginsUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsNotificationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SetTextSizeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsAboutSystemUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsRingtoneUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsModifyNameUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsModifyEmailAddrUI" android:windowSoftInputMode="0x00000002">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsModifyPasswordUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsActiveTimeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsNetStatUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.EditSignatureUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.qrcode.ShareToQQUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsPluginsNotifyUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SendFeedBackUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsChattingBackgroundUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingsSelectBgUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="3" android:name="com.tencent.mm.ui.tools.NewTaskUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:exported="false" android:name="com.tencent.mm.ui.tools.MultiStageCitySelectUI">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.GET_ADRESS">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.CountryCodeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.ui.tools.CropImageNewUI" android:process=":tools">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.ui.tools.ImageGalleryUI" android:theme="@7F0D0109">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:hardwareAccelerated="true" android:launchMode="1" android:name="com.tencent.mm.ui.tools.ImageGalleryGridUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.ShowImageUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.video.VideoPlayerUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.video.VideoDownloadUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.gallery.GestureGalleryUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SnsAddressUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.VoipAddressUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:icon="@7F020500" android:name="com.tencent.mm.ui.tools.ShareImgUI">
+            <intent-filter android:label="@7F0C07AB">
+                <action android:name="android.intent.action.SEND">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <data android:mimeType="image/*">
+                </data>
+                <data android:mimeType="video/*">
+                </data>
+                <data android:mimeType="application/*">
+                </data>
+                <data android:mimeType="text/*">
+                </data>
+            </intent-filter>
+            <intent-filter android:label="@7F0C07AB">
+                <action android:name="android.intent.action.SEND_MULTIPLE">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <data android:mimeType="image/*">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:icon="@7F0207F7" android:name="com.tencent.mm.ui.tools.ShareToTimeLineUI">
+            <intent-filter android:label="@7F0C07AC">
+                <action android:name="android.intent.action.SEND">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <data android:mimeType="image/*">
+                </data>
+            </intent-filter>
+            <intent-filter android:label="@7F0C07AC">
+                <action android:name="android.intent.action.SEND_MULTIPLE">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <data android:mimeType="image/*">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.ShareImageRedirectUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.ShareImageUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.topcui.BakToPcUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.topcui.BakWaitingUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.topcui.BakFinishUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.topcui.BakConnErrorUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.topcui.BakOperatingUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatRecoverCheckUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatUploadSelectUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatUploadingUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatRecoveringUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakchatSetCryptUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakchatSelcetCryptUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.backup.ui.BakChatInputCryptUI">
+        </activity>
+        <receiver android:exported="false" android:name="com.tencent.mm.booter.NotifyReceiver">
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.notification.NotificationDeleteReceive">
+        </receiver>
+        <receiver android:exported="false" android:name="com.tencent.mm.sandbox.monitor.CrashUploadAlarmReceiver">
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_EJECT">
+                </action>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_SHARED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_REMOVED">
+                </action>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL">
+                </action>
+                <data android:scheme="file">
+                </data>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.mm.booter.NotifyReceiver$NotifyService">
+        </service>
+        <service android:name="com.tencent.mm.modelfriend.AddrBookObserver$AddrBookService">
+        </service>
+        <receiver android:name="com.tencent.mm.booter.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.media.SCO_AUDIO_STATE_CHANGED">
+                </action>
+                <action android:name="android.media.ACTION_SCO_AUDIO_STATE_UPDATED">
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER">
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.tencent.mm.booter.MMReceivers$ToolsProcessReceiver" android:process=":tools">
+        </receiver>
+        <receiver android:name="com.tencent.mm.plugin.backup.bakpcmodel.BakchatPcmgrNorify" android:permission="">
+            <intent-filter>
+                <action android:name="MMBakchatServiceStart">
+                </action>
+                <action android:name="MMBakchatServiceStop">
+                </action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.tencent.mm.plugin.backup.bakpcmodel.BakchatPcUsbService">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.backup.bakpcmodel.BakchatPcUsbService">
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name="com.tencent.mm.booter.CoreService" android:process=":push">
+        </service>
+        <service android:name="com.tencent.mm.booter.cache.CacheService" android:process=":push">
+        </service>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$BootReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED">
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$ConnectionReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" android:process=":push">
+        </receiver>
+        <receiver android:exported="false" android:name="com.tencent.mm.jni.platformcomm.Alarm" android:process=":push">
+        </receiver>
+        <provider android:authorities="com.tencent.mm.sdk.plugin.provider" android:exported="true" android:name="com.tencent.mm.plugin.base.stub.MMPluginProvider" android:writePermission="com.tencent.mm.plugin.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.sdk.comm.provider" android:exported="true" android:name="com.tencent.mm.plugin.base.stub.WXCommProvider">
+        </provider>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="1" android:name="com.tencent.mm.plugin.base.stub.WXEntryActivity" android:theme="@7F0D0122">
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="1" android:name="com.tencent.mm.plugin.base.stub.WXPayEntryActivity" android:theme="@7F0D0120">
+        </activity>
+        <receiver android:name="com.tencent.mm.plugin.base.stub.WXEntryActivity$EntryReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_REGISTER">
+                </action>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_UNREGISTER">
+                </action>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.base.stub.UIEntryStub" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.openapi.AddAppUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.openapi.ServiceAppUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.openapi.AppProfileUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.voicesearch.VoiceSearchResultUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.voicesearch.SearchConversationResultUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.voicereminder.ui.RemindDialog" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:exported="false" android:name="com.tencent.mm.ui.qrcode.GetQRCodeInfoUI" android:permission="com.tencent.mm.permission.GET_QRCODE_INFO" android:theme="@7F0D0120">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <category android:name="android.intent.category.BROWSABLE">
+                </category>
+                <data android:host="weixin.qq.com" android:pathPrefix="/r/" android:scheme="http">
+                </data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <category android:name="android.intent.category.BROWSABLE">
+                </category>
+                <data android:host="qr" android:scheme="weixin">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SelfQRCodeUI" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.qrcode.ShareMicroMsgChoiceUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.qrcode.ShowQRCodeStep1UI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingDeleteAccountAgreementUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingDeleteAccountInputPassUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.setting.SettingDeleteAccountUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.chatting.ResourcesExceedUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.ChatroomContactUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.AccountDeletedAlphaAlertUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.autoadd.ui.AutoAddFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindlinkedin.ListLinkedInFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindlinkedin.InviteLinkedInFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.jdbiz.JDRemindDialog" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.tools.MMTextInputUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <service android:name="com.tencent.mm.remoteservice.RemoteService">
+        </service>
+        <receiver android:exported="false" android:name="com.tencent.mm.modelstat.WatchDogPushReceiver" android:process=":push">
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.pluginsdk.ui.tools.FileExplorerUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.pluginsdk.ui.tools.AppChooserUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.pluginsdk.downloader.ui.ProgressDialogUI" android:theme="@7F0D011F">
+        </activity>
+        <service android:name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadManger$FileDownloadService">
+        </service>
+        <receiver android:name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadManger$FileDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE">
+                </action>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED">
+                </action>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindqq.BindQQUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindqq.VerifyQQUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindqq.StartUnbindQQ">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindqq.SuccUnbindQQ">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindqq.QQGroupUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindgooglecontact.BindGoogleContactIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindgooglecontact.GoogleFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindgooglecontact.BindGoogleContactUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindlinkedin.BindLinkedInUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.safedevice.ui.SecurityAccountIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.safedevice.ui.SecurityAccountVerifyUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.safedevice.ui.MySafeDeviceListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.safedevice.ui.ModSafeDeviceNameUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.safedevice.ui.BindSafeDeviceUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.FacebookAuthUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.FacebookFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.ShowNonWeixinFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.LoginSelectorUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.LoginHistoryUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.LoginUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.FacebookLoginUI" android:windowSoftInputMode="0x00000002">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.accountn.RegByQQAuthUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileRegUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.MobileVerifyUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileRegAIOUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileWaitingSMSUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileVoiceVerifyUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileVoiceVerifySelectUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileSetPwdUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByMobileSetNickUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:name="com.tencent.mm.ui.account.SimpleLoginUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByFacebookSetPwdUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByQQUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegByEmailUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.EmailVerifyUI" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.RegSetInfoUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.LoginByMobileUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.LoginIndepPass" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.BindFacebookUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.mobile.MobileInputUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.mobile.MobileVerifyUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.account.mobile.MobileLoginOrForceReg" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.MobileFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.QQFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.InviteFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.InviteRecommendChoiceUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.RecommendFriendUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.InviteFacebookFriendsUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.accountsync.ui.ContactsSyncUI">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW">
+                </action>
+                <action android:name="com.tencent.mm.login.ACTION_LOGIN">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.login">
+                </data>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.profile">
+                </data>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.voip">
+                </data>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.voip.video">
+                </data>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.plugin.sns.timeline">
+                </data>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.phonenum">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.BindMContactIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.BindMContactUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.BindMContactVerifyUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.BindMContactStatusUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.FindMContactIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.FindMContactAlertUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.bindmobile.FindMContactLearmMoreUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.FindMContactAddUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.friend.FindMContactInviteUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.ui.account.bind.BindMobileStatusUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.ui.account.bind.BindMobileVerifyUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.ui.account.bind.BindMobileUI" android:windowSoftInputMode="0x00000002">
+        </activity>
+        <service android:exported="true" android:name="com.tencent.mm.plugin.accountsync.model.AccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator">
+                </action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@7F050006">
+            </meta-data>
+        </service>
+        <service android:exported="true" android:name="com.tencent.mm.plugin.accountsync.model.ContactsSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter">
+                </action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@7F05004E">
+            </meta-data>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@7F050025">
+            </meta-data>
+        </service>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.address.ui.WalletAddAddressUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.address.ui.WalletSelectAddrUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.address.ui.WalletMultiRcptSelectUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottleWizardStep1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottleWizardStep2">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottleBeachUI" android:screenOrientation="1" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottleConversationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottleChattingUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.bottle.ui.BottlePersonalInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.brandservice.ui.BrandServiceIndexUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.brandservice.ui.SearchOrRecommendBizUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.brandservice.ui.EnterpriseBizListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.brandservice.ui.ReceiveTemplateMsgMgrUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.brandservice.ui.BrandServiceLocalSearchUI" android:theme="@7F0D0122" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.card.ui.CardIndexUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.card.ui.CardInvalidCardUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.card.ui.CardDetailUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.card.ui.CardDetailPreference" android:theme="@7F0D0105">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.card.ui.CardPrivilegeUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.card.ui.CardNewMsgUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.card.ui.CardShopUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.card.ui.CardListSelectedUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomUpgradeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomUpgradeResultUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomAlphaProcessUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomAnnouncementUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.ChatroomInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.GrantRoomUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomRightUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.chatroom.ui.RoomInfoDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.clean.ui.CleanListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.collect.ui.CollectMainUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000001">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.collect.ui.CollectCreateQRCodeUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000001">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.collect.ui.CollectFixedAmountQRCodeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.CustomSmileyPreviewUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiCustomUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiPaidUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreDetailUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiMineUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiSortUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.AppMsgEmojiDownloadUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreGiftUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.emoji.ui.EmojiPayUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.exdevice.ui.ExdeviceRankInfoUI">
+        </activity>
+        <service android:exported="false" android:name="com.tencent.mm.plugin.exdevice.service.ExDeviceService" android:process=":exdevice">
+        </service>
+        <provider android:authorities="com.tencent.mm.plugin.ext.ExtContentProviderBase" android:name="com.tencent.mm.plugin.ext.provider.ExtContentProviderBase" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.message" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderMsg" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.SearchContact" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderSearchContact" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.NearBy" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderNearBy" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.SNS" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderSNS" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.AccountSync" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderAccountSync" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <provider android:authorities="com.tencent.mm.plugin.ext.entry" android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderEntry" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE">
+        </provider>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.extqlauncher.ui.QLauncherCreateShortcutUI" android:theme="@android:0103000F">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavoriteIndexUI" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.favorite.ui.FavOpenApiEntry" android:theme="@7F0D0120">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavTipsUI" android:theme="@7F0D011F">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavTextEditUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavTagEditUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavSelectUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavImgGalleryUI" android:theme="@7F0D0107">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.FavSearchUI" android:theme="@7F0D0120">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteTextDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteImgDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteFileDetailUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteVoiceDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteMusicDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteRecordDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.post.FavPostTextUI" android:windowSoftInputMode="0x00000014">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.favorite.ui.post.FavPostVoiceUI" android:screenOrientation="1" android:theme="@7F0D011F">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.freewifi.ui.FreeWifiNoAuthStateUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.freewifi.ui.FreeWifiAuthStateUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.freewifi.ui.FreeWifiIntroductionUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.freewifi.ui.FreeWifiEntryUI" android:theme="@7F0D011F">
+        </activity>
+        <receiver android:exported="false" android:name="com.tencent.mm.plugin.freewifi.model.AutoAuthFreeWifiReceiver">
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.gallery.ui.GalleryUI" android:process=":tools" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.gallery.ui.ImagePreviewUI" android:process=":tools" android:screenOrientation="1" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI" android:process=":tools" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.gallery.ui.GalleryEntryUI" android:process=":tools" android:theme="@7F0D0107">
+        </activity>
+        <service android:name="com.tencent.mm.plugin.gallery.stub.GalleryStubService">
+        </service>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameCenterUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameDetailInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.AuthorizedGameListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameSettingsUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameGestureGalleryUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameRankUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.game.ui.GameMessageUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.game.ui.GameDownloadTipsUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:excludeFromRecents="true" android:exported="false" android:name="com.tencent.mm.plugin.game.ui.GameMD5CheckUI" android:taskAffinity="com.tencent.mm.game.md5check" android:theme="@7F0D011F">
+            <intent-filter>
+                <action android:name="com.tencent.mm.game.md5check">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.tencent.mm.plugin.gwallet.GWalletUI" android:theme="@android:0103000F">
+            <intent-filter>
+                <action android:name="com.tencent.mm.gwallet.ACTION_PAY_REQUEST">
+                </action>
+                <action android:name="com.tencent.mm.gwallet.ACTION_QUERY_REQUEST">
+                </action>
+                <category android:name="android.intent.category.DEFAULT">
+                </category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.tencent.mm.plugin.gwallet.queryprovider" android:exported="false" android:name="com.tencent.mm.plugin.gwallet.GWalletQueryProvider">
+        </provider>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.label.ui.ContactLabelEditUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.label.ui.ContactLabelManagerUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.label.ui.ContactLabelUI" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.label.ui.ContactLabelMemberListUI" android:theme="@7F0D0105">
+        </activity>
+        <meta-data android:name="com.here.android.maps.appid" android:value="tmkbOprWWac3E6aRwM7k">
+        </meta-data>
+        <meta-data android:name="com.here.android.maps.apptoken" android:value="Zu5YH_mv5xIVhsDJONa48w">
+        </meta-data>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.RedirectUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.RemarkUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000024">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.LocationExtUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.soso.SoSoProxyUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.google.GoogleProxyUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location.ui.nm.NMProxyUI" android:screenOrientation="1">
+        </activity>
+        <uses-library android:name="com.here.android" android:required="false">
+        </uses-library>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location_google.GoogleProxyUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location_nm.NMProxyUI" android:screenOrientation="1">
+        </activity>
+        <meta-data android:name="TencentMapSDK" android:value="00e3d061e7debe5f88aec44e0b549b76">
+        </meta-data>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.location_soso.SoSoProxyUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.mall.ui.MallIndexUI" android:screenOrientation="1" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.masssend.ui.MassSendSelectContactUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.masssend.ui.MassSendMsgUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.masssend.ui.MassSendHistoryUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendsIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendShowSayHiUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendsUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearby.ui.NearbyPersonalInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearby.ui.NearbySayHiListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearlife.ui.CheckInLifeUI" android:windowSoftInputMode="0x00000010">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearlife.ui.NearLifeCreatePoiUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.nearlife.ui.SelectPoiCategoryUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.order.ui.MallOrderRecordListUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.order.ui.MallOrderDetailInfoUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.order.ui.MallOrderTransactionInfoUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.order.ui.MallOrderProductListUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.product.ui.MallProductUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.product.ui.MallProductSelectSkuUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.product.ui.MallProductSubmitUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.product.ui.MallProductReceiptUI" android:windowSoftInputMode="0x00000005">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.product.ui.MallGalleryUI" android:theme="@7F0D0107">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.pwdgroup.ui.FacingCreateChatRoomAllInONeUI" android:screenOrientation="1" android:theme="@7F0D01C2">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qmessage.ui.QConversationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.RoomInfoShareQrUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.ComposeUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.MailAddrListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.ReadMailUI" android:process=":tools">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.MailAddrProfileUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.MailWebViewUI" android:process=":tools">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.CompressPreviewUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.AttachDownloadPage">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqmail.ui.MailImageDownloadUI">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.qqmail.stub.QQMailStubProxyUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.qqsync.ui.QQSyncUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.radar.ui.RadarSearchUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppSubscribeUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.recharge.ui.RechargeUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000001">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.record.ui.RecordMsgDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.record.ui.RecordMsgImageUI" android:theme="@7F0D0107">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.record.ui.RecordMsgFileUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.remittance.ui.RemittanceUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.remittance.ui.RemittanceResendMsgUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.remittance.ui.RemittanceAdapterUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.remittance.ui.RemittanceResultUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000001">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.remittance.ui.RemittanceDetailUI" android:windowAnimationStyle="@00000000" android:windowSoftInputMode="0x00000001">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.sandbox.updater.AppUpdaterUI" android:process=":sandbox" android:theme="@7F0D0120">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.sandbox.updater.AppInstallerUI" android:process=":sandbox" android:theme="@7F0D0120">
+        </activity>
+        <service android:name="com.tencent.mm.sandbox.monitor.ExceptionMonitorService" android:process=":sandbox">
+        </service>
+        <service android:name="com.tencent.mm.sandbox.updater.UpdaterService" android:process=":sandbox">
+        </service>
+        <activity android:configChanges="0x000004A0" android:launchMode="2" android:name="com.tencent.mm.plugin.scanner.ui.BaseScanUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.scanner.ui.ProductUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.scanner.ui.ProductFurtherInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.scanner.ui.VcardContactUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.search.ui.SearchUI" android:theme="@7F0D0122" android:windowSoftInputMode="0x00000020">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.search.ui.SearchDetailPageUI" android:theme="@7F0D0120">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.search.ui.SearchTalkerUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.ShakeSayHiListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.ShakeMsgListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.shakemedia.ui.ShakeMusicPlayerUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.ShakeReportUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.ShakePersonalInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.ShakeItemListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.shakemedia.ui.ShakeTVDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.shake.ui.TVInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004B0" android:label="@7F0C07A9" android:launchMode="2" android:name="com.tencent.mm.plugin.shoot.ui.ShootMainUI" android:process=":tools" android:screenOrientation="1">
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="0x000004B0" android:launchMode="2" android:name="com.tencent.mm.plugin.shoot.ui.ShootFlashUI" android:process=":tools" android:screenOrientation="1" android:theme="@android:0103000A">
+        </activity>
+        <receiver android:exported="false" android:name="com.tencent.mm.plugin.shoot.remote.RemoteNetSceneMgr$RespReceiver" android:process=":tools">
+            --&gt;
+        </receiver>
+        <receiver android:exported="false" android:name="com.tencent.mm.plugin.shootstub.communicate.ReqReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.SHOOT_STUB_REQ">
+                </action>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsAnimation$SnsPostAnimationUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.sns.ui.SnsUserUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsTimeLineUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.ClassifyTimeLineUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsStrangerCommentDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsUploadUI" android:windowSoftInputMode="0x00000012">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsGalleryUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.ArtistBrowseUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsBrowseUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsSelectContactDialog" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsMsgUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.sns.ui.SettingSnsBackgroundUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.ArtistUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsUploadBrowseUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsCommentUI" android:windowSoftInputMode="0x00000014">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsTagUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsTagDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsBlackDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsTagPartlyUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.contact.SnsTagContactListUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsPermissionUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsSingleTextViewUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sns.ui.SnsLongMsgUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sysvideo.ui.video.VideoRecorderUI" android:screenOrientation="1" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.sysvideo.ui.video.VideoRecorderPreviewUI" android:theme="@7F0D0106">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="2" android:name="com.tencent.mm.plugin.talkroom.ui.TalkRoomUI" android:screenOrientation="1" android:theme="@7F0D015F">
+        </activity>
+        <service android:name="com.tencent.mm.plugin.talkroom.component.TalkRoomService">
+        </service>
+        <receiver android:name="com.tencent.mm.plugin.talkroom.model.TalkRoomReceiver">
+        </receiver>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseIntroUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseReportUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.voip.ui.VideoActivity" android:screenOrientation="1" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.ui.base.MMSuperAlert" android:screenOrientation="1" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.voip.ui.InviteRemindDialog" android:screenOrientation="1" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.voip.audio.ui.VoipAudioUI" android:screenOrientation="1" android:theme="@7F0D0105">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBankcardManageUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBindUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBankcardIdUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletConfirmCardIDUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardElementUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000002">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardImportUI" android:windowSoftInputMode="0x00000002">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBankcardDetailUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardSelectUI" android:screenOrientation="1" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletResetInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletLauncherUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletPayUI" android:screenOrientation="1" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletVerifyCodeUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletOrderInfoUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletChangeBankcardUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletSetPasswordUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletPwdConfirmUI" android:screenOrientation="1" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletPasswordSettingUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletCheckPwdUI" android:screenOrientation="1" android:theme="@7F0D0122" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletForgotPwdUI" android:screenOrientation="1" android:theme="@7F0D0122" android:windowSoftInputMode="0x00000003">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.offline.ui.WalletOfflineCoinPurseUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.offline.ui.WalletOfflineSetting" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet.offline.ui.WalletOfflineAmountUI" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wallet.balance.ui.WalletBalanceManagerUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wallet.balance.ui.WalletBalanceFetchUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wallet.balance.ui.WalletBalanceSaveUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wallet.balance.ui.WalletBalanceResultUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet_index.ui.WalletIapUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet_index.ui.WalletBrandUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.wallet_index.ui.OrderHandlerUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.jsapi.ShareToQQWeiboUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.WebViewUI" android:process=":tools" android:screenOrientation="4">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.webview.stub.WebViewStubProxyUI" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.BrowserChooseActivity" android:theme="@7F0D0121">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.OAuthUI" android:noHistory="true" android:process=":tools">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.ContactQZoneWebView" android:process=":tools">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webview.ui.tools.QRCodeIntroductionWebViewUI" android:process=":tools" android:windowSoftInputMode="0x00000022">
+        </activity>
+        <service android:name="com.tencent.mm.plugin.webview.stub.WebViewStubService">
+        </service>
+        <activity android:configChanges="0x000004A0" android:launchMode="1" android:name="com.tencent.mm.plugin.webwx.ui.WebWXLogoutUI">
+        </activity>
+        <activity android:configChanges="0x000004A0" android:name="com.tencent.mm.plugin.webwx.ui.WebWeiXinIntroductionUI">
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.whatsnew.ui.WhatsNewUI" android:process=":tools" android:screenOrientation="1">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditOpenUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletCheckIdentityUI" android:windowSoftInputMode="0x00000004">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletBindDepositUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditOpenResultUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditOpenNotifyUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditChangeAmountUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditChangeAmountResultUI">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditDetailUI" android:theme="@7F0D0122">
+        </activity>
+        <activity android:configChanges="0x000000A0" android:name="com.tencent.mm.plugin.wxcredit.ui.WalletWXCreditErrDetailUI">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PROFILE">
+    </uses-permission>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false">
+    </uses-feature>
+    <permission android:name="com.tencent.mm.ext.permission.READ" android:protectionLevel="0x00000003">
+    </permission>
+    <permission android:name="com.tencent.mm.ext.permission.WRITE" android:protectionLevel="0x00000003">
+    </permission>
+    <uses-permission android:name="com.tencent.mm.ext.permission.READ">
+    </uses-permission>
+    <uses-permission android:name="com.tencent.mm.ext.permission.WRITE">
+    </uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING">
+    </uses-permission>
+</manifest>
